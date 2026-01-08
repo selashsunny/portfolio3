@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BLACKHAT INTERFACE // RED TEAM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CINEMATIC INTRO -->
+<div id="cinematic">
+  <pre id="cinematic-text"></pre>
+  <div class="skip">PRESS ESC TO SKIP</div>
+</div>
+
+<!-- BACKGROUND -->
+<div class="city"></div>
+<div class="scanlines"></div>
+
+<!-- TERMINAL -->
+<div class="terminal">
+  <pre class="banner">
+██████╗ ███████╗██████╗     ████████╗███████╗ █████╗ ███╗   ███╗
+██╔══██╗██╔════╝██╔══██╗    ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
+██████╔╝█████╗  ██║  ██║       ██║   █████╗  ███████║██╔████╔██║
+██╔══██╗██╔══╝  ██║  ██║       ██║   ██╔══╝  ██╔══██║██║╚██╔╝██║
+██║  ██║███████╗██████╔╝       ██║   ███████╗██║  ██║██║ ╚═╝ ██║
+╚═╝  ╚═╝╚══════╝╚═════╝        ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝
+  </pre>
+
+  <div id="output"></div>
+
+  <div class="input-line">
+    <span class="prompt">root@blackhat:~#</span>
+    <input type="text" id="command" autofocus autocomplete="off">
+  </div>
+</div>
+
+<div class="warning">⚠ UNAUTHORIZED ACCESS WILL BE MONITORED ⚠</div>
+
+<audio id="keySound" src="sounds/key.mp3"></audio>
+
+<script src="terminal.js"></script>
+<script src="ai.js"></script>
+<script src="siem.js"></script>
+</body>
+</html>
